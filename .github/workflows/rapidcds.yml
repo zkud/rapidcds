@@ -8,7 +8,6 @@ env:
 jobs:
   unit_tests:
     name: "Unit Tests"
-
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +19,6 @@ jobs:
 
   lint:
     name: "Lint"
-
     runs-on: ubuntu-latest
 
     steps:
