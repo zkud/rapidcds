@@ -7,7 +7,7 @@ env:
 
 jobs:
   project:
-    name: "Project CI/CD"
+    name: "RAPIDCDS CI/CD"
 
     runs-on: ubuntu-18.04
 
