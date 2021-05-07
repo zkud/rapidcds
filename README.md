@@ -1,6 +1,7 @@
 # Rapid CDS Extention
 
-This is the README for your extension "rapidcds". After writing up a brief description, we recommend including the following sections.
+VSCode Extention for enabling rapid [CAP CDS](https://cap.cloud.sap/docs/cds/) development.
+Supports snippets, mock data generation, dummy Node.js service implementation
 
 ## Features
 
