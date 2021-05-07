@@ -1,4 +1,4 @@
-# Rapid CDS Extention
+# RAPIDCDS VSCode Extention
 
 VSCode Extention for enabling rapid [CAP CDS](https://cap.cloud.sap/docs/cds/) development.
 Supports snippets, mock data generation, dummy Node.js service implementation
