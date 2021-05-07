@@ -6,10 +6,22 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  project:
-    name: "Project CI/CD"
+  unit_tests:
+    name: "Unit Tests"
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-lastest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: "Install external dependencies"
+      run: npm install
+    - name: "Run tests"
+      run: npm run test
+
+  lint:
+    name: "Lint"
+
+    runs-on: ubuntu-lastest
 
     steps:
     - uses: actions/checkout@v2
@@ -17,5 +29,21 @@ jobs:
       run: npm install
     - name: "Lint"
       run: npm run lint
-    - name: "Run tests"
-      run: npm run test
+
+  analyze:
+    name: "Code Analysis"
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v1
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v1
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v1
