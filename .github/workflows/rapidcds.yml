@@ -6,8 +6,8 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  web_client:
-    name: "Web Client"
+  project:
+    name: "Project CI/CD"
 
     runs-on: ubuntu-18.04
 
