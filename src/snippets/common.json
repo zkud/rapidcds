@@ -2,8 +2,8 @@
     "RAPIDCDS: Entity": {
         "prefix": ["entity"],
         "body": [
-            "entity ${0:EntityName} : cuid, managed {",
-            "\t${1:fieldName} : ${2:FieldType};",
+            "entity ${1:EntityName} : cuid, managed {",
+            "\t${2:fieldName} : ${3:FieldType};",
             "}"
         ],
         "desciption": "rapidcds: Entity Definition"
@@ -12,10 +12,9 @@
     "RAPIDCDS: View": {
         "prefix": ["view"],
         "body": [
-            "view ${0:ViewName} as select from",
-            "\t${1:SourceEntityName} as ${2:SourceEntityName}",
-            "{",
-            "\t${3:SourceEntityName.FieldName} as ${4:FieldName}",
+            "view ${1:ViewName} as select from",
+            "\t${2:SourceEntityName} as ${3:SourceEntityName} {",
+            "\t${4:SourceEntityName.FieldName} as ${5:FieldName}",
             "};"
         ],
         "desciption": "View Definition"
@@ -24,8 +23,8 @@
     "RAPIDCDS: Service": {
         "prefix": ["service"],
         "body": [
-            "service ${0:ServiceName} {",
-            "\t${1:SourceEntityName} as projection on ${2:SourceEntityName};",
+            "service ${1:ServiceName} {",
+            "\t${2:SourceEntityName} as projection on ${3:SourceEntityName};",
             "}"
         ],
         "desciption": "Service Definition"
@@ -39,13 +38,13 @@
 
     "RAPIDCDS: Action": {
         "prefix": ["action"],
-        "body": ["action ${0:ActionName} (${1:ActionArgumentName} : ${2:ActionArgumentType});"],
+        "body": ["action ${1:ActionName} (${2:ActionArgumentName} : ${3:ActionArgumentType});"],
         "desciption": "Service Action Definition"
     },
 
     "RAPIDCDS: Function": {
         "prefix": ["function"],
-        "body": ["function ${0:FunctionName} (${1:FunctionArgumentName} : ${2:FunctionArgumentType}) returns ${3:FunctionReturnType};"],
+        "body": ["function ${1:FunctionName} (${2:FunctionArgumentName} : ${3:FunctionArgumentType}) returns ${3:FunctionReturnType};"],
         "desciption": "Service Function Definition"
     }
 }
