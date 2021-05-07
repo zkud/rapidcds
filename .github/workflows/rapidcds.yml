@@ -1,0 +1,21 @@
+name: rapidcds
+
+on: [push, pull_request]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  web_client:
+    name: "Web Client"
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: "Install external dependencies"
+      run: npm install
+    - name: "Lint"
+      run: npm run lint
+    - name: "Run tests"
+      run: npm run test

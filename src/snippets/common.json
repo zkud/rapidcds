@@ -1,0 +1,51 @@
+{
+    "Entity": {
+        "prefix": ["entity"],
+        "body": [
+            "entity ${0:EntityName} : cuid, managed {",
+            "\t${1:fieldName} : ${2:FieldType};",
+            "}"
+        ],
+        "desciption": "rapidcds: Entity Definition"
+    },
+
+    "View": {
+        "prefix": ["view"],
+        "body": [
+            "view ${0:ViewName} as select from",
+            "\t${1:SourceEntityName} as ${2:SourceEntityName}",
+            "{",
+            "\t${3:SourceEntityName.FieldName} as ${4:FieldName}",
+            "};"
+        ],
+        "desciption": "rapidcds: View Definition"
+    },
+
+    "Service": {
+        "prefix": ["service"],
+        "body": [
+            "service ${0:ServiceName} {",
+            "\t${1:SourceEntityName} as projection on ${2:SourceEntityName};",
+            "}"
+        ],
+        "desciption": "rapidcds: Service Definition"
+    },
+
+    "Entity Projection": {
+        "prefix": ["entity", "entity-projection"],
+        "body": ["${1:SourceEntityName} as projection on ${2:SourceEntityName};"],
+        "desciption": "rapidcds: Entity Projection Definition"
+    },
+
+    "Action": {
+        "prefix": ["action"],
+        "body": ["action ${0:ActionName} (${1:ActionArgumentName} : ${2:ActionArgumentType});"],
+        "desciption": "rapidcds: Service Action Definition"
+    },
+
+    "Function": {
+        "prefix": ["function"],
+        "body": ["function ${0:FunctionName} (${1:FunctionArgumentName} : ${2:FunctionArgumentType}) returns ${3:FunctionReturnType};"],
+        "desciption": "rapidcds: Service Function Definition"
+    }
+}
