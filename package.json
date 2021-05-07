@@ -15,9 +15,9 @@
 			"url": "https://github.com/zkud"
 		},
 		{
-			"name": "Stsiapan Saveliev aka steaven",
-			"email": ":blank:",
-			"url": ":blank:"
+			"name": "Stsiapan Saveliev aka SteveSavel",
+			"email": "stevesavelev@gmail.com",
+			"url": "https://github.com/SteveSavel"
 		}
 	],
 	"engines": {
@@ -46,6 +46,10 @@
 			{
 				"language": "cds",
 				"path": "./src/snippets/common.json"
+			},
+			{
+				"language": "cds",
+				"path": "./src/snippets/ui.json"
 			}
 		]
 	},
