@@ -1,5 +1,7 @@
 # Change Log
 
-## [Unreleased]
+## < 0.1.0
 
-- Initial release
+- Initial implementation
+
+- Provided Snippets

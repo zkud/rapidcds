@@ -14,8 +14,8 @@
         "body": [
             "view ${1:ViewName} as select from",
             "\t${2:SourceEntityName} as ${3:SourceEntityName} {",
-            "\t${4:SourceEntityName.FieldName} as ${5:FieldName}",
-            "};"
+            "\t\t${4:SourceEntityName.FieldName} as ${5:FieldName}",
+            "\t};"
         ],
         "desciption": "View Definition"
     },

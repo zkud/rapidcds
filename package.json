@@ -15,7 +15,7 @@
 			"url": "https://github.com/zkud"
 		},
 		{
-			"name": "Stsiapan Saveliev aka SteveSavel",
+			"name": "Stsiapan Savelyeu aka SteveSavel",
 			"email": "stevesavelev@gmail.com",
 			"url": "https://github.com/SteveSavel"
 		}
@@ -32,6 +32,16 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"languages":[{
+			"id": "cds",
+			"aliases": [
+				"CDS",
+				"CAP CDS"
+			],
+			"extensions": [
+				".cds"
+			]
+		}],
 		"commands": [
 			{
 				"command": "rapidcds.generateMockCsv",
