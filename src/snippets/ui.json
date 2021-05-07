@@ -26,7 +26,7 @@
             "\t\tFacets : [",
             "\t\t\t{",
             "\t\t\t\t\\$Type  : 'UI.ReferenceFacet',",
-            "\t\t\t\tLabel  : '{@${3:i18nfile}>${11:ReferenceFacetLabel}',",
+            "\t\t\t\tLabel  : '{@${3:i18nfile}>${11:ReferenceFacetLabel}}',",
             "\t\t\t\tTarget : '@UI.FieldGroup#${8:FieldGroupName}'",
             "\t\t\t}",
             "\t\t]",
@@ -41,7 +41,7 @@
         "body": [
             "annotate ${1:ServiceName}.${2:EntityName} with @title : '{@${3:i18nfile}>${4:EntityTitle}}' {",
             "\t${5:FieldName}",
-            "\t@title : '{@${3:i18nfile}>${6:FieldTitle}';",
+            "\t@title : '{@${3:i18nfile}>${6:FieldTitle}}';",
             "}"
         ],
         "desciption": "Entity Fields UI Annotations"
