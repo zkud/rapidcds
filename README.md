@@ -8,7 +8,7 @@ Supports snippets, mock .csv data generation, dummy Node.js service implementati
 
 ### Useful snippets for fast writing
 
-![example](https://github.com/zkud/rapidcds/docs/images/snippets.gif)
+![example](https://github.com/zkud/rapidcds/blob/main/docs/images/snippets.gif)
 
 Please check out [this docs](https://github.com/zkud/rapidcds/wiki/Supported-Snippets) to review available snippets
 
