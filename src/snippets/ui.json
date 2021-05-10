@@ -1,0 +1,49 @@
+{
+    "RAPIDCDS: Mock UI App": {
+        "prefix": ["ui-app"],
+        "body": [
+            "annotate ${1:ServiceName}.${2:EntityName} with @(UI: {",
+            "\tHeaderInfo : {",
+            "\t\tTypeName : '{@${3:i18nfile}>${4:TypeNameKey}}',",
+            "\t\tTypeNamePlural : '{@${3:i18nfile}>${5:TypeNamePluralKey}}',",
+            "\t\tTitle : {",
+            "\t\t\tValue : ${6:HeaderTitleValue}",
+            "\t\t},",
+            "\t\tDescription : {",
+            "\t\t\tValue : ${7:HeaderDescriptionField}",
+            "\t\t}",
+            "\t},",
+            "\t",
+            "\tFieldGroup#${8:FieldGroupName} : {",
+            "\t\tData : [",
+            "\t\t\t{ Value : ${9:FieldGroupValue} }",
+            "\t\t]",
+            "\t},",
+            "\t",
+            "\tFacets : [{",
+            "\t\t\\$Type : 'UI.CollectionFacet',",
+            "\t\tLabel : '{@${3:i18nfile}>${10:CollectionFacetLabel}}',",
+            "\t\tFacets : [",
+            "\t\t\t{",
+            "\t\t\t\t\\$Type  : 'UI.ReferenceFacet',",
+            "\t\t\t\tLabel  : '{@${3:i18nfile}>${11:ReferenceFacetLabel}}',",
+            "\t\t\t\tTarget : '@UI.FieldGroup#${8:FieldGroupName}'",
+            "\t\t\t}",
+            "\t\t]",
+            "\t}],",
+            "});"
+        ],
+        "desciption": "App built on UI Fiori Smart-Template Annotations"
+    },
+
+    "RAPIDCDS: Mock Entity Fields Annotation": {
+        "prefix": ["ui-fields"],
+        "body": [
+            "annotate ${1:ServiceName}.${2:EntityName} with @title : '{@${3:i18nfile}>${4:EntityTitle}}' {",
+            "\t${5:FieldName}",
+            "\t@title : '{@${3:i18nfile}>${6:FieldTitle}}';",
+            "}"
+        ],
+        "desciption": "Entity Fields UI Annotations"
+    }
+}
