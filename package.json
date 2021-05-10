@@ -2,7 +2,11 @@
 	"name": "rapidcds",
 	"displayName": "rapidcds",
 	"description": "Additional support for rapid developing in CAP CDS",
-	"version": "0.0.1",
+	"version": "0.1.0",
+	"publisher": "zkud",
+	"repository": {
+		"url": "https://github.com/zkud/rapidcds"
+	},
 	"author": {
 		"name": "Anton Kudyrka aka zkud",
 		"email": "anton.kudyrka@gmail.com",
@@ -72,6 +76,7 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
+		"vsce": "~1.88.0",
 		"@types/vscode": "^1.56.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.4",
